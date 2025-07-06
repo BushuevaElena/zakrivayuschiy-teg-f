@@ -1,1 +1,56 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter";
+  --main-font-size: 18px;
+  --accent-font: "PressStart2P";
+  --accent-color: #000;
+  --text-color: #000;
+  --header-title-font-size: clamp(3.0625rem, 2.5rem + 1.8vw, 4.065rem);
+  --header-description-font-size: clamp(0.875rem, 0.3rem + 1.8vw, 1.4375rem);
+  --header-title-font-wght: 400;
+  --header-padding: clamp(120px, 10vw, 128px) clamp(14px, 5vw, 120.5px);
+  --header-margin: 100px auto;
+  --header-wdth: 100%;
+  --card-text-wght: 400;
+  --card-title-wght: 700;
+  --card-title-size: 18px;
+  --card-fone-size: 18px;
+  --card-title-padding: 4px 10px 6px;
+  --page-background: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0, #e7e7e7 0.01%, #1a1a1a 100%);
+  --section--background: #fff;
+  --header-title-background: #fff;
+  --stroke-color: #fff;
+  --label-font-size: 14px;
+  --label-text-shadow: 1px 0 var(--stroke-color, #fff),
+    -1px 0 var(--stroke-color, #fff), 0 1px var(--stroke-color, #fff),
+    0 -1px var(--stroke-color, #fff), 1px 1px var(--stroke-color, #fff),
+    -1px 1px var(--stroke-color, #fff), 1px -1px var(--stroke-color, #fff),
+    -1px -1px var(--stroke-color, #fff);
+  --animation-fill-color: #ff0000;
+  --invert-color: #fff;
+  --button-font-size: 14px;
+  --button-text-wght: 400;
+  --accent-heading-transform: uppercase;
+  --contour-fill-color: #000;
+  --animation-fill-color: #ff0000;
+  --icon-background-color: transparent;
+  --dialog-font-size: 14px;
+  --floppy-size: 28px;
+  --dialog-floppy-size: 39px;
+  --button-ok-padding: 10.5px 112.5px;
+  --dialog-padding: 30px 40px;
+}
