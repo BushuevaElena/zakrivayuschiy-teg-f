@@ -209,23 +209,6 @@
   transition: border 0.3s ease;
 }
 
-/* Лайк */
-.like-icon.is-liked .contour {
-  fill: var(--animation-fill-color, #ff0000);
-  transition-delay: 0.06s;
-  transition-duration: 0.3s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--animation-fill-color, #ff0000);
-  transition-delay: 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--animation-fill-color, #ff0000);
-  transition-delay: 0s;
-}
-
 /* Размеры иконки сердечка */
 .heart-icon {
   inline-size: 39px;
@@ -286,10 +269,6 @@
   transform: translateX(-100%);
 }
 
-.textual-button:hover::before {
-  transform: translateX(0);
-}
-
 /* Текст кнопок */
 .button__text {
   position: relative;
@@ -321,14 +300,16 @@
   height: var(--floppy-size);
 }
 
+.textual-button:hover::before {
+  transform: translateX(0);
+}
+
 .card__icon-button:hover .main-body {
   fill: var(--contour-fill-color, #000);
-  border: none;
   transition-delay: 0.05s;
 }
 
 .card__icon-button:hover .core {
-  border: none;
   fill: var(--contour-fill-color, #000);
   transition-delay: 0s;
 }
@@ -342,6 +323,23 @@
 .card__icon-button:active .main-body {
   fill: var(--animation-fill-color, #ff0000);
   transition-delay: 0.05s;
+}
+
+/* Лайк */
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color, #ff0000);
+  transition-delay: 0.06s;
+  transition-duration: 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color, #ff0000);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color, #ff0000);
+  transition-delay: 0s;
 }
 
 /* Диалоговое окно */
