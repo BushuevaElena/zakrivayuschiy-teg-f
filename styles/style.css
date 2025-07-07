@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--main-font, "Inter"), monospace;
+  font-family: var(--main-font, "Inter"), "Times New Roman", monospace;
   font-variation-settings: "wght" var(--card-text-wght);
   background-image: var(
     --page-background,
@@ -55,7 +55,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: var(--accent-font, "PressStart2P-Regular"), monospace;
+  font-family: var(--accent-font, "PressStart2P-Regular"), "Times New Roman",
+    monospace;
   font-weight: var(--header-title-font-wght, normal);
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
@@ -136,7 +137,7 @@
   z-index: 1;
   opacity: 0.5;
   color: var(--text-color, #000);
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), "Times New Roman", monospace;
   font-size: var(--label-font-size, 14px);
   /* callback */
   text-shadow: var(
@@ -155,10 +156,14 @@
 }
 
 /* text-stroke */
-@supports (-webkit-text-stroke: 1px var(--stroke-color, #fff)) {
+@supports (
+  (-webkit-text-stroke: 1px var(--stroke-color, #fff)) or
+    (text-stroke: 1px var(--stroke-color, #fff))
+) {
   .card__label {
-    text-shadow: none;
     -webkit-text-stroke: 1px var(--stroke-color, #fff);
+    text-stroke: 1px var(--stroke-color, #fff);
+    text-shadow: none;
   }
 }
 
@@ -185,9 +190,9 @@
   display: flex;
   gap: 4px;
   justify-self: end;
-  block-size: 38px;
+  align-items: start;
   padding-inline: 25px;
-  margin-block-end: 25px;
+  margin-block-end: 19px;
 }
 
 /* Кнопки */
@@ -245,9 +250,8 @@
 /* Кнопка лайка */
 .card__like-button {
   position: relative;
-  padding: var(--button-like-padding, 6px 0);
+  padding: var(--button-like-padding, 7px 0);
   inline-size: 130px;
-  box-sizing: 38px;
 }
 
 /* Текст - кнопка */
@@ -275,10 +279,10 @@
   margin: 0;
   padding: 0;
   color: var(--invert-color, #fff);
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), "Times New Roman", monospace;
   font-weight: var(--button-text-wght);
   font-size: var(--button-font-size, 14px);
-  line-height: 0.9em;
+  line-height: 90%;
   mix-blend-mode: difference;
 }
 
@@ -350,7 +354,7 @@
   flex-direction: column;
   border: 2px solid #000;
   padding: var(--dialog-padding, 30px 40px);
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), "Times New Roman", monospace;
   transition: opacity 0.5s ease-in-out;
   max-inline-size: clamp(286px, calc(100vw - 34px), 353px);
 }
