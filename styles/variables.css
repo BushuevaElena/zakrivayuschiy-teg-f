@@ -5,16 +5,19 @@
   --accent-font: "PressStart2P";
   --accent-color: #000;
   --text-color: #000;
-  --header-title-font-size: clamp(3.0625rem, 2.5rem + 1.8vw, 4.065rem);
+  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-description-font-size: clamp(0.875rem, 0.3rem + 1.8vw, 1.4375rem);
   --header-title-font-wght: 400;
-  --header-padding: clamp(120px, 10vw, 128px) clamp(14px, 5vw, 120.5px);
+  --header-padding: clamp(120px, 10vw, 128px) clamp(14px, 4vw, 120.5px);
   --header-margin: 100px auto;
   --header-wdth: 100%;
+  --border-color: #000;
   --card-text-wght: 400;
   --card-title-wght: 700;
   --card-title-size: 18px;
+  --border: 2px solid #000;
   --card-fone-size: 18px;
+  --card-content-padding: 25px;
   --card-title-padding: 4px 10px 6px;
   --page-background: repeating-linear-gradient(
       90deg,
@@ -35,6 +38,8 @@
   --header-title-background: #fff;
   --stroke-color: #fff;
   --label-font-size: 14px;
+  --label-top: 24px;
+  --label-right: 11px;
   --label-text-shadow: 1px 0 var(--stroke-color, #fff),
     -1px 0 var(--stroke-color, #fff), 0 1px var(--stroke-color, #fff),
     0 -1px var(--stroke-color, #fff), 1px 1px var(--stroke-color, #fff),
@@ -44,7 +49,6 @@
   --invert-color: #fff;
   --button-font-size: 14px;
   --button-text-wght: 400;
-  --accent-heading-transform: uppercase;
   --contour-fill-color: #000;
   --animation-fill-color: #ff0000;
   --icon-background-color: transparent;
@@ -52,5 +56,6 @@
   --floppy-size: 28px;
   --dialog-floppy-size: 39px;
   --button-ok-padding: 10.5px 112.5px;
-  --dialog-padding: 30px 40px;
+  --dialog-padding: 28px 40px;
+  --floppy-size: 39px;
 }
