@@ -53,9 +53,10 @@
   --animation-fill-color: #ff0000;
   --icon-background-color: transparent;
   --dialog-font-size: 14px;
+  --button-like-padding: 1px;
   --floppy-size: 28px;
   --dialog-floppy-size: 39px;
-  --button-ok-padding: 10.5px 112.5px;
-  --dialog-padding: 28px 40px;
+  --button-ok-padding: 10px 112.5px;
+  --dialog-padding: 30px 40px;
   --floppy-size: 39px;
 }
